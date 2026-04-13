@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: rgb(139, 145, 145);
+}
+
+/* TOPO */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  color: purple;
+  border: 2px solid purple;
+  padding: 10px 20px;
+}
+
+.pesquisa {
+  padding: 8px;
+}
+
+.login a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: purple;
+}
+
+/* MENU */
+.menu {
+  background: linear-gradient(to right, rgb(132, 0, 255), rgb(132, 0, 255));
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  height: 800px;
+  border: 30px 40px;
+  object-fit: cover;
+
+}
+
+/* CATEGORIAS */
+.categorias {
+  padding: 20px;
+}
+
+.categorias h2 {
+  color: rgb(132, 0, 255);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: rgb(132, 0, 255);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 20px;
+}
+
+.produtos h2 {
+  color: rgb(132, 0, 255);
+}
+
+/* HISTORIA */
+.historia {
+  padding: 20px;
+}
+
+.historia h2 {
+  color: rgb(132, 0, 255);
+}
+
+.conteudo-historia {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(to right, rgb(132, 0, 255), rgb(132, 0, 255));
+  padding: 20px;
+  color: white;
+}
+
+.conteudo-historia img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .conteudo-historia {
+    flex-direction: column;
+  }
+}
